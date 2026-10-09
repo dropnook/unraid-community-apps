@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Dropnook</Name>
+  <Repository>ghcr.io/dropnook/dropnook:2</Repository>
+  <Registry>https://github.com/dropnook/dropnook.app/pkgs/container/dropnook</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/dropnook/dropnook.app/issues</Support>
+  <Project>https://dropnook.dropnook.app/</Project>
+  <ReadMe>https://github.com/dropnook/dropnook.app#readme</ReadMe>
+  <Overview>Instant sharing for your home network — like AirDrop, but for every device. Open one web page on your phone, laptop or PC, drop in text, files or a screenshot (Ctrl+V), and it is on every other device at once: no app, no login, no cloud. Text fields that survive lost connections, uploads of any size that resume, picture previews, 17 languages, five colour layouts in light and dark, an optional PIN, and up to five users with an area of their own next to the shared one.
+
+This is the LAN-only edition: a single container, reachable in your network only, without sharing to the internet. Sharing single files or texts through expiring links needs a second, locked-down container — for that, install Dropnook as a Compose stack instead (see the project page).</Overview>
+  <Category>Productivity: Tools:Utilities Network:Other</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/dropnook/unraid-community-apps/main/templates/dropnook.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/dropnook/dropnook.app/main/.github/icons/drop.png</Icon>
+  <ExtraParams>--cap-drop ALL --cap-add CHOWN --cap-add DAC_OVERRIDE --cap-add FOWNER --cap-add NET_BIND_SERVICE --security-opt no-new-privileges:true --memory 2g --pids-limit 200</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText>Dropnook is free and stays free. If it is useful to you, you can say thanks.</DonateText>
+  <DonateLink>https://paypal.me/dropnook</DonateLink>
+  <Requires>A share for Drop's files — create it first (Shares → Add Share, e.g. "drop"); otherwise Docker creates the folder as a share with default settings.</Requires>
+  <ExtraSearchTerms>dropnook drop airdrop share sharing clipboard screenshot files text lan localsend snapdrop pairdrop transfer</ExtraSearchTerms>
+  <Config Name="Web UI port" Target="80" Default="8088" Mode="tcp" Description="Port in your network for Drop's page: http://Tower:8088" Type="Port" Display="always" Required="true" Mask="false">8088</Config>
+  <Config Name="Files and texts" Target="/data" Default="/mnt/user/drop" Mode="rw" Description="Where Drop keeps its files and text fields — a share of its own. Create it before the first start." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/drop</Config>
+  <Config Name="PIN" Target="PIN" Default="" Mode="" Description="Optional. A PIN or password every new browser is asked for once (then signed in for 90 days). Empty: anyone in your network can open Drop. With users: the PIN of every user without one of their own." Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="More names" Target="HOSTS" Default="" Mode="" Description="Optional. Drop answers to IP addresses and local names (tower, tower.local, ….lan, ….fritz.box) by itself. If you open it under another name, put it here, e.g. drop.example.org — comma-separated, *.example.org for every name under it." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="User (teal)" Target="USER_TEAL" Default="" Mode="" Description="Optional, up to five users, one per colour: name:PIN (e.g. Anna:2468), or the name alone. Each gets an area of their own next to the shared one, and the page in their colour." Type="Variable" Display="advanced" Required="false" Mask="true"/>
+  <Config Name="User (gold)" Target="USER_GOLD" Default="" Mode="" Description="Optional: name:PIN, or the name alone." Type="Variable" Display="advanced" Required="false" Mask="true"/>
+  <Config Name="User (blue)" Target="USER_BLUE" Default="" Mode="" Description="Optional: name:PIN, or the name alone." Type="Variable" Display="advanced" Required="false" Mask="true"/>
+  <Config Name="User (violet)" Target="USER_VIOLET" Default="" Mode="" Description="Optional: name:PIN, or the name alone." Type="Variable" Display="advanced" Required="false" Mask="true"/>
+  <Config Name="User (coral)" Target="USER_CORAL" Default="" Mode="" Description="Optional: name:PIN, or the name alone." Type="Variable" Display="advanced" Required="false" Mask="true"/>
+  <Config Name="Translations of your own" Target="/config" Default="/mnt/user/appdata/drop" Mode="ro" Description="Optional lang/ and help/ files that change Drop's wording or add a language. Read-only; may stay empty." Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/drop</Config>
+  <Config Name="Server name" Target="/unraid/ident.cfg" Default="/boot/config/ident.cfg" Mode="ro" Description="Unraid's settings file with the server name, read-only — the page calls itself e.g. &quot;Tower Drop&quot;." Type="Path" Display="advanced" Required="false" Mask="false">/boot/config/ident.cfg</Config>
+  <Config Name="Mode" Target="MODE" Default="lan" Mode="" Description="Drop itself, in your network. Leave it." Type="Variable" Display="always-hide" Required="true" Mask="false">lan</Config>
+  <Config Name="Sharing to the internet" Target="SHARING" Default="off" Mode="" Description="Off in this edition — it needs the second container of the Compose stack. Leave it." Type="Variable" Display="always-hide" Required="true" Mask="false">off</Config>
+</Container>
