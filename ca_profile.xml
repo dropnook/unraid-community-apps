@@ -1,8 +1,12 @@
 <CommunityApplications>
   <Profile>
+Self-hosted tools for the home server — made for Unraid, free and open source: no cloud, no account, nothing locked.
+
 **Unraid Secretary Office** — a staff of secretaries inside Unraid's web UI, each looking after one part of your server: backups (Mr. Backupsy), restores and the restore drill (Mr. Restori), snapshots (Ms. Snapshotini), logs (Ms. Protocolli), security watch, also of a UniFi router's log (the Night Watchman), what lies where and tidying up (Ms. Dustdevil), Emby caching (Jack Emby), the tools it relies on (the Consultant) and the Team Lead, who suggests whom to hire, pairs partner offices and tells you what is left to do. Support and issues on GitHub, or from inside the office (⋯ → Report a problem or a wish…).
+
+**Dropnook** — instant sharing for your home network, like AirDrop for every device: text, files and screenshots between phone, laptop and PC in the browser, no app, no login, no cloud. In Community Apps as a single container for your network only; sharing to the internet comes with the Compose stack on the project page. Support and issues on GitHub.
   </Profile>
-  <Icon>https://raw.githubusercontent.com/dropnook/UnraidSecretaryOffice/main/plugin/images/unraid-secretary-office.png</Icon>
-  <WebPage>https://github.com/dropnook/UnraidSecretaryOffice</WebPage>
-  <Forum>https://github.com/dropnook/UnraidSecretaryOffice/issues</Forum>
+  <Icon>https://raw.githubusercontent.com/dropnook/dropnook/main/.github/logo.png</Icon>
+  <WebPage>https://dropnook.app/</WebPage>
+  <Forum>https://github.com/dropnook</Forum>
 </CommunityApplications>
