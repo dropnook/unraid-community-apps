@@ -10,6 +10,7 @@
   <Support>https://github.com/dropnook/dropnook.app/issues</Support>
   <Project>https://dropnook.dropnook.app/</Project>
   <ReadMe>https://github.com/dropnook/dropnook.app#readme</ReadMe>
+  <License>AGPL-3.0-only</License>
   <Overview>Instant sharing for your home network — like AirDrop, but for every device. Open one web page on your phone, laptop or PC, drop in text, files or a screenshot (Ctrl+V), and it is on every other device at once: no app, no login, no cloud. Text fields that survive lost connections, uploads of any size that resume, picture previews, 17 languages, five colour layouts in light and dark, an optional PIN, up to five users with an area of their own next to the shared one, and a live room: go live with video or voice, everyone with Drop open sees a tile and joins with one click — up to 10 people, straight from device to device.
 
 Over HTTPS Drop can do more — the live room, copying pictures: give it a certificate from Cert Warden in the advanced settings, and it fetches and renews it by itself.
