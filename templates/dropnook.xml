@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/dropnook/dropnook.app/issues</Support>
+  <Support>https://forums.unraid.net/topic/200961-support-dropnook-drop-instant-sharing-for-your-home-network-text-files-screenshots-live-video-room/</Support>
   <Project>https://dropnook.dropnook.app/</Project>
   <ReadMe>https://github.com/dropnook/dropnook.app#readme</ReadMe>
   <License>AGPL-3.0-only</License>
