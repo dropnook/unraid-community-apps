@@ -1,11 +1,5 @@
 <CommunityApplications>
-  <Profile>
-Self-hosted tools for the home server — made for Unraid.
-
-**Unraid Secretary Office** — a staff of secretaries inside Unraid's web UI, each looking after one part of your server: backups (Mr. Backupsy), restores and the restore drill (Mr. Restori), snapshots (Ms. Snapshotini), logs (Ms. Protocolli), security watch, also of a UniFi or MikroTik router's log (the Night Watchman), what lies where and tidying up (Ms. Dustdevil), a media cache for Emby, Jellyfin and Plex (Jack Streamer), the mover (Ms. Moverelli), the tools it relies on (the Consultant) and the Team Lead, who suggests whom to hire, pairs partner offices and tells you what is left to do. Support in its Unraid forum thread, on GitHub, or right from inside the office (⋯ → Report a problem or a wish…).
-
-**Drop** — instant sharing for your home network, like AirDrop for every device: text, files and screenshots between phone, laptop and PC in the browser, no app, no login, no cloud. In Community Apps as a single container for your network only; sharing to the internet comes with the Compose stack on the project page. Support in its Unraid forum thread and on GitHub.
-  </Profile>
+  <Profile>Self-hosted tools for your Unraid server.[br][br][b]Unraid Secretary Office[/b] — a team inside Unraid's web UI, one secretary for each part of your server:[br]• Backups and offsite copies — Mr. Backupsy[br]• Restores and restore drills — Mr. Restori[br]• Snapshots — Ms. Snapshotini[br]• Media cache for Emby, Jellyfin and Plex — Jack Streamer[br]• Smart mover — Ms. Moverelli[br]• Security watch, UniFi and MikroTik too — the Night Watchman[br]• Disk space and tidying up — Ms. Dustdevil[br]• Every log in one place — Ms. Protocolli[br]The Team Lead says whom to hire and what is left to do. Support: forum, GitHub, or ⋯ → Report a problem.[br][br][b]Drop[/b] — like AirDrop for every device on your home network:[br]• Text, files and screenshots between phone, laptop and PC[br]• In the browser: no app, no login, no cloud[br]• Sharing to the internet with the Compose stack on the project page[br]Support: forum and GitHub.</Profile>
   <Icon>https://raw.githubusercontent.com/dropnook/dropnook/main/.github/logo.png</Icon>
   <WebPage>https://dropnook.app/</WebPage>
   <Forum>https://forums.unraid.net/topic/200961-support-dropnook-drop-instant-sharing-for-your-home-network-text-files-screenshots-live-video-room/</Forum>
